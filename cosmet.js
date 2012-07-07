@@ -1,7 +1,8 @@
 var cosmet = window.cosmet || {};
 
 
-cosmet.GraphView = function() {
+cosmet.StatsService = function(host) {
+	this.host_ = host;
 };
 
 
@@ -11,4 +12,6 @@ cosmet.GtvCosmet = function() {
 
 cosmet.GtvCosmet.prototype.start = function() {
 	this.root_ = $('.cosmet');
+
+	this.stats_ = new cosmet.StatsServer('');
 };
