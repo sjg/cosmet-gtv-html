@@ -5,19 +5,24 @@
 		<link rel="stylesheet" href="cosmet.css" type="text/css" media="screen" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="./jquery-timers.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript" src="cosmet.js"></script>
 		<script tyle="text/javascript">
 			window.cosmet_ = new cosmet.GtvCosmet();
+			google.setOnLoadCallback(function() {
+				window.cosmet_.start();
+			});
+			google.load("visualization", "1", {packages:["corechart"]});
 		</script>
 	</head>
-	<body onload="window.cosmet_.start()">
+	<body>
 		<div class="cosmet">
 			<div class="graph-container">
-				<div class="graph">
+				<div id="graph" class="graph">
 				</div>
 				<div class="status">
 					<div class="title">
-						Statistics
+						<h1>Statistics</h1>
 					</div>
 					<div class="status-lower">
 						<div class="watts-cont">
