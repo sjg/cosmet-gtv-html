@@ -4,6 +4,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" href="cosmet.css" type="text/css" media="screen" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="./jquery-timers.js"></script>
 		<script type="text/javascript" src="cosmet.js"></script>
 		<script tyle="text/javascript">
 			window.cosmet_ = new cosmet.GtvCosmet();
@@ -30,7 +31,30 @@
 			<div class="details-container">
 				<div class="current-details">
 				</div>
-				<div class="badges">
+				<div class="badges" style="margin-top: 10px;">
+					<div id="textBar" style="font-size: 20px; margin-left: 20px; margin-right: 20px;">
+						 Other Sensors <br/>
+						<hr style="border: 1px solid white;"/>
+					</div>
+					<div id="temp-container" style="font-size: 32px; display: inline-block; height: 60px; width: 120px; padding: 20px;  margin-top: 10px; margin-left: 20px; text-align: center; background-color: #FF3838;">
+						<span id="temp" style="">26.5&deg;C</span>
+						<span id="temp-text" style="font-size: 15px; padding-top: 15px;">Temperature</span>	
+					</div>
+
+					<div id="barometer-container" style="clear: both; font-size: 32px; display: inline-block; height: 60px; width: 120px; padding: 20px;  margin-top: 10px; margin-left: 20px; text-align: center; background-color: #49CC71; margin-left: 14%">
+						<span id="temp" style="">1.13mb</span>
+						<span id="temp-text" style="font-size: 15px; padding-top: 15px;">Pressure</span>			
+					</div>
+
+					<div id="barometer-container" style="clear: both; display: inline-block; height: 60px; width: 120px; padding: 00px;  margin-left: 90px; text-align: center;">
+						<img src="./img/1st.png" alt="First Prize" height="80px" />
+                                        </div>
+				
+					<div id="textBar" style="font-size: 20px; margin-left: 20px; margin-right: 20px; margin-top: 20px; ">
+                                                 Current Time: 19:49:56<br/>
+                                                <hr style="border: 1px solid white;"/>
+                                        </div>
+
 				</div>
 			</div>
 		</div>
