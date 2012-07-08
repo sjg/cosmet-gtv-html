@@ -3,8 +3,20 @@ div {
 	padding: 0;
 }
 
+.title > span {
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.title hr {
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px solid white;
+}
+
 .cosmet {
-	background-color: #000010;
+	background-color: #000;
 	color: #e1e1e1;
 	height: 100%;
 	left: 0;
@@ -27,6 +39,14 @@ div {
 	width: 65%;
 }
 
+.graph img {
+	width: 93%;
+	height: 70%;
+	margin-top: 0.9em;
+	margin-left: 1.2em;
+	text-align: center;
+}
+
 .status {
 	height: 100%;
 	position: absolute;
@@ -35,14 +55,36 @@ div {
 	border-left: 1px solid #444;
 }
 
-.title {
-	text-align: center;
-}
-
 .details-container {
 	bottom: 0;
 	height: 55%;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+.watt-prediction,
+.watt-prev {
+	width: 80%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#pred, #watt {
+	font-size: 25px;
+}
+
+.badge {
+	clear: both;
+	display: inline-block;
+	font-size: 32px;
+	height: 60px;
+	margin-left: 90px;
+	margin-top: 10px; 
+	padding: 10px;
+	text-align: center;
+	width: 120px;
+}
+
+.badge + .badge {
 }
